@@ -38,8 +38,8 @@ export const HeroSection = () => {
 
                     {/* Academic Heading - Using serif-style aesthetic via custom weights and letter spacing */}
                     <h1 className="text-[40px] sm:text-[56px] lg:text-[76px] font-bold leading-[1.05] tracking-tight text-white mb-8 max-w-4xl mx-auto drop-shadow-2xl">
-                        Your Future
-                        <span className="italic font-normal opacity-90 text-accent">Should Not Decide</span> <br />
+                        Your Marks
+                        <span className="font-normal opacity-90 text-accent"> Should Not Decide</span> <br />
                         Your Future
                     </h1>
 
