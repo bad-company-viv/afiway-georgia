@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2A0845;
+  /* Deeper, richer purple */
+  --color-primary-light: #3e1b5b;
+  --color-accent: #C59A5C;
+  /* Noble metallic gold */
+  --color-accent-hover: #A67C45;
+  --color-neutral: #F9FAFB;
+  --color-white/5: rgba(255, 255, 255, 0.05);
+  --color-white/10: rgba(255, 255, 255, 0.1);
+  --color-white/20: rgba(255, 255, 255, 0.2);
+  --font-sans: "Inter", sans-serif;
+  --radius-custom: 12px;
+}
+
+@layer utilities {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-effect-dark {
+    background: rgba(42, 8, 69, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1a052b 100%);
+  }
+
+  .card-shadow {
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+  }
+
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--color-accent), transparent);
+    opacity: 0.6;
+    border-radius: 9999px;
+  }
+
+  @media (min-width: 768px) {
+    .timeline-line::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Premium Hover Line Border Effect - Traces exactly around the perimeter */
+  .hover-line-border {
+    position: relative;
+  }
+
+  .hover-line-border::before {
+    content: '';
+    position: absolute;
+    inset: -1.5px;
+    border-radius: inherit;
+    padding: 1.5px;
+    /* Line thickness */
+    background: linear-gradient(90deg,
+        transparent 0%,
+        #C59A5C 50%,
+        transparent 100%);
+    background-size: 200% 100%;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .hover-line-border:hover::before {
+    opacity: 1;
+    animation: border-trace 2s linear infinite;
+  }
+
+  @keyframes border-trace {
+    0% {
+      background-position: 200% 0;
+    }
+
+    100% {
+      background-position: -200% 0;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
