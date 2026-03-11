@@ -173,7 +173,7 @@ export const SITE_DATA = {
         },
         copyright: "© 2026 AFIway. All rights reserved.",
         credits: {
-            label: "Site Credits",
+            label: "",
             items: [
                 { name: "Fabulous Media", url: "https://fabulousmedia.in", logo: "/sitecredits/fabulous.png" },
                 { name: "Go Commercially", url: "https://gocommercially.com", logo: "/sitecredits/gocomercially.svg" }
