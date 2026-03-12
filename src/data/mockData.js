@@ -2,7 +2,7 @@ export const SITE_DATA = {
     hero: {
         badge: "✦ Applications Open for 2026",
         title: "Your NEET Score Should Not Decide Your Future",
-        description: "25 lakh students compete for ~55,000 government seats. Thousands of capable students compromise their dream due to seat shortage, not lack of capability.",
+        description: "25 lakh students compete for ~55,000 government seats. Thousands of capable students compromise their dreams due to a shortage of seats.",
         bgImage: "/hero-bg-v2.png",
         studentImage: "/afi-hero.jpeg",
         stats: [
@@ -66,8 +66,8 @@ export const SITE_DATA = {
         subtitle: "Georgia has rapidly emerged as a top choice for Indian medical students. Here's what makes it stand out.",
         features: [
             { id: 1, title: "NMC Recognized Universities", desc: "Universities listed in the World Directory of Medical Schools and compliant with NMC regulations.", icon: "shield-check" },
-            { id: 2, title: "English Medium Education", desc: "Complete MBBS program taught in English — no language barriers", icon: "book-open" },
-            { id: 3, title: "Affordable Tuition", desc: "Total cost significantly lower than Indian private medical colleges", icon: "wallet" },
+            { id: 2, title: "English Medium Education", desc: "The complete MBBS program is taught in English — no language barriers", icon: "book-open" },
+            { id: 3, title: "Affordable Tuition", desc: "The total cost is significantly lower than Indian private medical colleges", icon: "wallet" },
             { id: 4, title: "Modern Hospitals", desc: "Clinical training in well-equipped, modern hospital facilities", icon: "building-2" },
             { id: 5, title: "Safe Student Environment", desc: "Georgia ranks high on safety index with a welcoming local culture", icon: "heart" },
             { id: 6, title: "International Exposure", desc: "Study with peers from 40+ countries in a truly global setting", icon: "globe" }
@@ -102,7 +102,7 @@ export const SITE_DATA = {
         ],
         highlights: [
             { value: "100%", label: "NMC Recognized Universities" },
-            { value: "180+", label: "Countries Recognition" },
+            { value: "180+", label: "Recognition in 180+ Countries" },
             { value: "6 Years", label: "Internationally Accredited Program" }
         ],
         accreditations: [
@@ -163,7 +163,7 @@ export const SITE_DATA = {
             { id: 3, title: "Documentation Support", desc: "End-to-end help with all paperwork and formalities", icon: "file-text" },
             { id: 4, title: "Visa Assistance", desc: "Complete visa guidance and application support", icon: "plane" },
             { id: 5, title: "Pre-Departure Prep", desc: "Cultural orientation, packing guides, and more", icon: "book-open" },
-            { id: 6, title: "Ongoing Student Guidance", desc: "Continued support even after you reach Georgia", icon: "users" }
+            { id: 6, title: "Ongoing Student Guidance", desc: "Continued support even after you arrive in Georgia", icon: "users" }
         ]
     },
     process: {
