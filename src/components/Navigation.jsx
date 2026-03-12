@@ -29,18 +29,18 @@ export const Navigation = () => {
             animate={{ y: 0 }}
             transition={{ type: 'spring', stiffness: 100, damping: 20 }}
         >
-            <div className="w-full px-4 lg:px-8">
-                <div className="flex justify-between items-center py-1">
+            <div className="w-full px-3 sm:px-4 lg:px-8">
+                <div className="flex justify-between items-center py-1 gap-2 sm:gap-4">
                     <motion.a
                         href="/"
                         className="shrink-0 flex items-center"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <img src="/afi-logo.png" alt="AFIway" className="h-24 w-24 object-contain" />
+                        <img src="/afi-logo.png" alt="AFIway" className="h-16 sm:h-20 lg:h-24 w-auto object-contain" />
                     </motion.a>
                     
-                    <div className="hidden md:flex space-x-16 items-center flex-1 justify-center">
+                    <div className="hidden lg:flex space-x-16 items-center flex-1 justify-center">
                         <motion.a
                             whileHover={{ y: -2, color: 'var(--color-accent)' }}
                             className="text-sm font-medium text-slate-700 transition-colors"
@@ -60,7 +60,7 @@ export const Navigation = () => {
                     <motion.a
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-accent text-white px-6 py-2.5 rounded-custom font-semibold shadow-[0_4px_14px_0_rgba(197,154,92,0.39)] hover:bg-accent-hover hover:shadow-[0_6px_20px_rgba(197,154,92,0.23)] transition-all shrink-0"
+                        className="bg-accent text-white px-3 sm:px-6 py-2 sm:py-2.5 rounded-custom font-semibold text-xs sm:text-sm shadow-[0_4px_14px_0_rgba(197,154,92,0.39)] hover:bg-accent-hover hover:shadow-[0_6px_20px_rgba(197,154,92,0.23)] transition-all shrink-0"
                         href="#eligibility"
                     >
                         Check Eligibility
