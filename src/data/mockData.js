@@ -2,7 +2,7 @@ export const SITE_DATA = {
     hero: {
         badge: "✦ Applications Open for 2026",
         title: "Your NEET Score Should Not Decide Your Future",
-        description: "Every year 25 lakh students appear for NEET, but there are only ~55,000 government seats. Thousands of capable students compromise on their dream because of a seat shortage, not a lack of capability.",
+        description: "25 lakh students compete for ~55,000 government seats. Thousands of capable students compromise their dream due to seat shortage, not lack of capability.",
         bgImage: "/hero-bg-v2.png",
         studentImage: "/afi-hero.jpeg",
         stats: [
@@ -90,6 +90,28 @@ export const SITE_DATA = {
             points: ["No donation/capitation", "Affordable cost of living", "Transparent fee structure", "European standard infrastructure"]
         }
     },
+    recognition: {
+        badge: "Credibility & Recognition",
+        title: "Your Degree Is Recognized Globally",
+        subtitle: "Study with confidence knowing your MBBS degree from Georgia is recognized by medical bodies worldwide and accepted in India.",
+        features: [
+            { id: 1, title: "NMC Recognized", desc: "All our partner universities are listed in the National Medical Commission's approved list for Indian students.", icon: "check-circle" },
+            { id: 2, title: "International Accreditation", desc: "Universities hold accreditation from international medical education bodies and are listed in the World Directory of Medical Schools.", icon: "globe" },
+            { id: 3, title: "India Practice Ready", desc: "Graduates can practice in India after passing FMGE or the upcoming National Exit Test (NEXT).", icon: "award" },
+            { id: 4, title: "Global Mobility", desc: "Degree is recognized in 180+ countries, opening doors for further specialization or practice abroad.", icon: "file-check" }
+        ],
+        highlights: [
+            { value: "100%", label: "NMC Recognized Universities" },
+            { value: "180+", label: "Countries Recognition" },
+            { value: "6 Years", label: "Internationally Accredited Program" }
+        ],
+        accreditations: [
+            "NMC (India)",
+            "WDMS Listed",
+            "WHO Recognized",
+            "European Standards"
+        ]
+    },
     concerns: {
         badge: "For Parents",
         title: "The Biggest Concern Parents Have",
@@ -101,7 +123,7 @@ export const SITE_DATA = {
             { id: 2, title: "Proper Preparation", desc: "From visa paperwork to cultural orientation, we ensure your child is fully prepared before they leave.", icon: "clipboard-check" },
             { id: 3, title: "Transparent Guidance", desc: "No hidden fees, no fake promises. Just honest facts about what to expect in Georgia.", icon: "handshake" }
         ],
-        summary: "✓ AFIway addresses all three — with verified universities, complete support, and zero hidden agendas."
+        summary: "✓ AFIWAY addresses all three — with verified universities, complete support, and zero hidden agendas."
     },
     eligibilityCta: {
         badge: "✦ Free Assessment",
@@ -113,7 +135,7 @@ export const SITE_DATA = {
             "Estimated total cost for your profile",
             "Best universities matched to your score"
         ],
-        quote: "AFIway gave me a clear picture of my healthcare career options within 24 hours. No pressure, just honest, transparent advice that helped me decide.",
+        quote: "AFIWAY gave me a clear picture of my healthcare career options within 24 hours. No pressure, just honest, transparent advice that helped me decide.",
         quoteAuthor: "Verified Student • New Delhi",
         form: {
             title: "Get Your Free Report",
@@ -129,7 +151,7 @@ export const SITE_DATA = {
     },
     chooseAfiway: {
         title: "Why Students Choose",
-        highlight: "AFIway",
+        highlight: "AFIWAY",
         subtitle: "We don't just send students abroad — we guide them through every step with honesty and care.",
         features: [
             { id: 1, title: "Verified Universities", desc: "Only NMC-recognized, quality-audited institutions", icon: "shield-check" },
@@ -156,7 +178,7 @@ export const SITE_DATA = {
         title: "Your Dream of Becoming a Doctor",
         highlight: "Should Not End",
         titleEnd: "With One Exam",
-        subtitle: "Explore MBBS opportunities in Georgia with AFIway. Take the first step towards your medical career today.",
+        subtitle: "Explore MBBS opportunities in Georgia with AFIWAY. Take the first step towards your medical career today.",
         primaryCta: "Check Eligibility",
         secondaryCta: "Speak to Advisor"
     },
@@ -171,7 +193,7 @@ export const SITE_DATA = {
             phone: "+91 XXXXX XXXXX",
             location: "India"
         },
-        copyright: "© 2026 AFIway. All rights reserved.",
+        copyright: "© 2026 AFIWAY. All rights reserved.",
         credits: {
             label: "",
             items: [
@@ -248,7 +270,7 @@ export const SITE_DATA = {
                 name: "Priya Sharma",
                 role: "3rd Year Student",
                 university: "Georgia",
-                text: "Choosing Georgia for my MBBS was the best decision. The clinical exposure here is world-class, and AFIway made the entire admission process stress-free.",
+                text: "Choosing Georgia for my MBBS was the best decision. The clinical exposure here is world-class, and AFIWAY made the entire admission process stress-free.",
                 image: "/student-1.png",
                 rating: 5
             },

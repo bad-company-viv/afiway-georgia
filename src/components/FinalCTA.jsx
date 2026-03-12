@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SITE_DATA } from '../data/mockData';
-import { Phone } from 'lucide-react';
 
 export const FinalCTA = () => {
     const { finalCta } = SITE_DATA;
@@ -23,24 +22,14 @@ export const FinalCTA = () => {
                         {finalCta.subtitle}
                     </p>
 
-                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
+                    <div className="flex justify-center">
                         <motion.a
                             whileHover={{ scale: 1.02, backgroundColor: '#B4884B' }}
                             whileTap={{ scale: 0.98 }}
-                            className="bg-[#C59A5C] text-[#2A0845] px-10 py-4 rounded-xl font-bold text-[16px] transition-all w-full sm:w-auto flex items-center justify-center gap-2 shadow-sm"
+                            className="bg-[#C59A5C] text-[#2A0845] px-10 py-4 rounded-xl font-bold text-[16px] transition-all flex items-center justify-center gap-2 shadow-sm"
                             href="#eligibility"
                         >
                             {finalCta.primaryCta} <span className="text-[18px]">→</span>
-                        </motion.a>
-
-                        <motion.a
-                            whileHover={{ scale: 1.02, backgroundColor: '#F8FAFC' }}
-                            whileTap={{ scale: 0.98 }}
-                            className="bg-white border border-[#E2E8F0] text-[#2A0845] px-10 py-4 rounded-xl font-bold text-[16px] transition-all w-full sm:w-auto flex items-center justify-center gap-3 shadow-sm"
-                            href="https://wa.me/your-number"
-                        >
-                            <Phone className="w-4 h-4 text-[#C59A5C]" />
-                            {finalCta.secondaryCta}
                         </motion.a>
                     </div>
                 </motion.div>

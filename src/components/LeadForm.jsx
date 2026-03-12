@@ -172,8 +172,8 @@ export const LeadForm = () => {
                                         {eligibilityCta.form.cta.replace('→', '')} <span className="group-hover:translate-x-1 transition-transform">→</span>
                                     </>
                                 )}
-                                {status === 'submitting' && "Processing your report..."}
-                                {status === 'success' && "Report Sent Successfully! ✓"}
+                                {status === 'submitting' && "Processing your details..."}
+                                {status === 'success' && "Details Sent Successfully! ✓"}
                             </motion.button>
 
                             {status === 'success' && (

@@ -5,6 +5,7 @@ import { RealitySection } from './components/RealitySection';
 import { GlobalEducation } from './components/GlobalEducation';
 import { WhyGeorgia } from './components/WhyGeorgia';
 import { CostComparison } from './components/CostComparison';
+import { RecognitionAccreditation } from './components/RecognitionAccreditation';
 import { ParentTrust } from './components/ParentTrust';
 import { WhyAFIway } from './components/WhyAFIway';
 import { Testimonials } from './components/Testimonials';
@@ -15,6 +16,7 @@ import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 import { LeadModal } from './components/LeadModal';
+import { FloatingCTA } from './components/FloatingCTA';
 import { usePopupTrigger } from './hooks/usePopupTrigger';
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
         <WhyGeorgia />
         <PathwayIncludes />
         <CostComparison />
+        <RecognitionAccreditation />
         <ParentTrust />
         <WhyAFIway />
         <Testimonials />
@@ -42,6 +45,7 @@ function App() {
 
       <Footer />
       <LeadModal isOpen={isOpen} onClose={closePopup} />
+      <FloatingCTA />
     </div>
   );
 }
