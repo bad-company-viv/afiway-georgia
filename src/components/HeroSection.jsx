@@ -37,22 +37,22 @@ export const HeroSection = () => {
                     </div>
 
                     {/* Academic Heading - Using serif-style aesthetic via custom weights and letter spacing */}
-                    <h1 className="text-[40px] sm:text-[56px] lg:text-[76px] font-bold leading-[1.05] tracking-tight text-white mb-8 max-w-4xl mx-auto drop-shadow-2xl">
-                        Your Marks
-                        <span className="font-normal opacity-90 text-accent"> Should Not Decide</span> <br />
-                        Your Future
+                    <h1 className="text-[32px] sm:text-[48px] lg:text-[64px] leading-[1.1] tracking-tight text-white mb-8 max-w-4xl mx-auto drop-shadow-2xl">
+                        <span className="font-normal">Your</span> <span className="font-bold">Marks</span>
+                        <span className="font-normal"> Should Not </span> <br />
+                        <span className="font-normal"> Decide Your</span> <span className="font-bold">Future</span>
                     </h1>
 
                     <p className="text-[17px] md:text-[20px] text-white/70 mb-12 leading-relaxed max-w-2xl mx-auto font-medium">
                         {hero.description}
                     </p>
 
-                    {/* Centered CTA Pair */}
-                    <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-20">
+                    {/* Centered CTA */}
+                    <div className="flex justify-center mb-20">
                         <motion.a
-                            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(197, 154, 92, 0.3)' }}
+                            whileHover={{ scale: 1.05, boxShadow: '0 0 40px rgba(197, 154, 92, 0.4)' }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-accent text-primary px-10 py-5 rounded-xl font-bold text-lg transition-all flex items-center gap-3 group"
+                            className="bg-accent text-primary px-12 py-5 rounded-xl font-bold text-lg transition-all flex items-center gap-3 group"
                             href="#eligibility"
                         >
                             <span>Check Eligibility</span>
@@ -60,8 +60,6 @@ export const HeroSection = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </motion.a>
-
-
                     </div>
 
                     {/* Floating Stats - Subtle row at bottom */}
