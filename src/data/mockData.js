@@ -121,9 +121,13 @@ export const SITE_DATA = {
         features: [
             { id: 1, title: "Choosing the Right University", desc: "We only recommend NMC-recognized, safe, and quality-audited universities. No compromises.", icon: "search" },
             { id: 2, title: "Proper Preparation", desc: "From visa paperwork to cultural orientation, we ensure your child is fully prepared before they leave.", icon: "clipboard-check" },
-            { id: 3, title: "Transparent Guidance", desc: "No hidden fees, no fake promises. Just honest facts about what to expect in Georgia.", icon: "handshake" }
+            { id: 3, title: "Transparent Guidance", desc: "No hidden fees, no fake promises. Just honest facts about what to expect in Georgia.", icon: "handshake" },
+            { id: 4, title: "Is MBBS in Georgia valid in India?", desc: "Yes, degrees from NMC-recognized universities are fully valid and accepted for practice in India.", icon: "search" },
+            { id: 5, title: "Can my child practice in India?", desc: "Yes, after passing FMGE or NEXT, your child can register and practice as a doctor in India.", icon: "clipboard-check" },
+            { id: 6, title: "Is Georgia safe for Indian students?", desc: "Georgia ranks among the top 10 safest countries globally with a welcoming culture for Indian students.", icon: "handshake" },
+            { id: 7, title: "What is the FMGE passing rate?", desc: "Our students have a strong FMGE passing rate with comprehensive preparation support provided.", icon: "search" }
         ],
-        summary: "✓ AFIWAY addresses all three — with verified universities, complete support, and zero hidden agendas."
+        summary: "✓ AFIWAY addresses all concerns — with verified universities, complete support, and zero hidden agendas."
     },
     eligibilityCta: {
         badge: "✦ Free Assessment",
