@@ -13,23 +13,21 @@ export const Footer = () => {
                     </p>
 
                     {footer.credits && (
-                        <div className="flex items-center gap-4">
-                            <span className="text-white/20 text-[11px] uppercase tracking-widest font-bold hidden sm:block">{footer.credits.label}</span>
-                            <div className="bg-white px-5 py-2 rounded-full flex items-center gap-5 shadow-lg border border-white/10 group-hover:scale-[1.02] transition-transform duration-500">
-                                {footer.credits.items.map((credit, i) => (
-                                    <React.Fragment key={i}>
-                                        {i > 0 && <div className="w-px h-4 bg-slate-200"></div>}
-                                        <a
-                                            href={credit.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="hover:scale-110 transition-transform duration-300 flex items-center"
-                                        >
-                                            <img src={credit.logo} alt={credit.name} className="h-4 md:h-5 w-auto object-contain transition-all duration-300" />
-                                        </a>
-                                    </React.Fragment>
-                                ))}
-                            </div>
+                        <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-white/30 bg-white/15 shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300">
+                            {footer.credits.items.map((credit, i) => (
+                                <React.Fragment key={i}>
+                                    {i > 0 && <div className="h-3 w-px bg-white/30 transition-colors duration-300"></div>}
+                                    <a
+                                        href={credit.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="rounded p-0.5 opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center hover:scale-110 transition-transform"
+                                        aria-label={credit.name}
+                                    >
+                                        <img src={credit.logo} alt={credit.name} className="h-3 w-auto" loading="lazy" />
+                                    </a>
+                                </React.Fragment>
+                            ))}
                         </div>
                     )}
                 </div>
